@@ -3,23 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Planetas Curiosos</title>
 </head>
 <body>
     <!-- Início Menu -->
     <header id="header">
-        <a id="logo" href="./index.html"><img src="./img/logo.png" alt=""></a>
+        <a id="logo" href="./index.html"><img src="./img/logo.png" alt="Logo"></a>
         <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            <span id="hamburger"></span>
+            <span id="hamburger" aria-hidden="true"></span>
         </button>
         <ul id="menu" role="menu">
-            <li><a class="linkMenu" href="./index.html">Home</a></li>
-            <li><a class="linkMenu" href="./quem-somos.html">Quem Somos</a></li>
-            <li><a class="linkMenu" href="./produtos.html">Produtos</a></li>
-            <li><a class="linkMenu" href="./videos.html">Vídeos</a></li>
-            <li><a class="linkMenu" href="./contato.html">Contato</a></li>
+            <li role="none"><a class="linkMenu" role="menuitem" href="./index.html" aria-current="page">Home</a></li>
+            <li role="none"><a class="linkMenu" role="menuitem" href="./quem-somos.html">Quem Somos</a></li>
+            <li role="none"><a class="linkMenu" role="menuitem" href="./produtos.html">Produtos</a></li>
+            <li role="none"><a class="linkMenu" role="menuitem" href="./videos.html">Vídeos</a></li>
+            <li role="none"><a class="linkMenu" role="menuitem" href="./contato.html">Contato</a></li>
         </ul>
     </header>
     <!-- Fim Menu -->
+     <!-- Conteúdo Principal -->
+      <main id="conteudo">
+        <section aria-label="Texto Alternativo" id="hieroglyph"></section>
+
+        <!-- carousel Página Principal -->
+        <section aria-label="Destaques em Banner">
+            <div
+                id="carouselExampleInterval"
+                class="carousel slide"
+                data-bs-rise="carousel"
+                data-bs-pause="none"
+            >
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="400">
+                    <img
+                    src="./img/banner01.jpg"
+                    class="d-block w-100"
+                    alt="Banner de Destaque 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="300">
+                    <img
+                    src="./img/banner02.jpg"
+                    class="d-block w-100"
+                    alt="Banner de Destaque 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="300">
+                    <img
+                    src="./img/banner03.jpg"
+                    class="d-block w-100"
+                    alt="Banner de Destaque 3">
+                </div>
+                <div class="carousel-item" data-bs-interval="300">
+                    <img
+                    src="./img/banner04.jpg"
+                    class="d-block w-100"
+                    alt="Banner de Destaque 4">
+                </div>
+                <div class="carousel-item" data-bs-interval="300">
+                    <img
+                    src="./img/banner05.jpg"
+                    class="d-block w-100"
+                    alt="Banner de Destaque 5">
+                </div>
+            </div>
+            <button class="carousel-control-prev" 
+            data-bs-target="#carouselExampleInterval"
+            type="button"
+            data-bs-slide="prev"
+            aria-label="Voltar Banner"
+            >
+            <span class="carousel-control-prev-icon"
+            aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" 
+            data-bs-target="#carouselExampleInterval"
+            type="button"
+            data-bs-slide="next"
+            aria-label="Avançar Banner"
+            >
+            <span class="carousel-control-next-icon"
+            aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+            </button>
+            </div>
+        </section>
+        <!-- Fim carousel -->
+        <!-- Início Banner -->
+      </main>
 </body>
+
+<script type="text/javascript" scr="./bootstrap/js/bootstrap.min.js"></script>
+
 </html>

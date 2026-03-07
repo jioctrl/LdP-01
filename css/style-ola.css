@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    text-align: center;
+    background-color: lightgreen;
+    height: 100px;
+}
+
+#header img {
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+#main-pagina-home h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#main-pagina-home p {
+    color: darkblue;
+    font-size: 15px;
+}
