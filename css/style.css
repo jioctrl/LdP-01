@@ -8,7 +8,7 @@ body, ul {
 /* Início Whatsapp */
 .whatsapp {
     position: fixed;
-    top: 400px;
+    bottom: 5%;
     right: 20px;
     z-index: 200;
 }
