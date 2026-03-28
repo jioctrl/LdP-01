@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimarcas | Vendas</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p.descricao {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .imagem-topo {
+            display: block;
+            width: 180px;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        thead th {
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tfoot td {
+            background-color: #efefef;
+            font-weight: bold;
+            text-align: center;
+        }
+        .col-marca {
+            width: 30%;
+        }
+        .col-modelo {
+            width: 40%;
+        }
+        .col-ano {
+            width: 30%;
+        }
+        .imagem-carros {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .imagem-carros img {
+            width: 70px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        .rodape-imagem {
+            display: block;
+            width: 120px;
+            margin: 25px auto 0 auto;
+            opacity: 0.9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="imagem-topo" src="./img/kwid.jpg" alt="Kwid">
+
+        <h1>Modelos de Carros em Estoque | Vendas</h1>
+        <p class="descricao">
+            Tabela de veículos disponíveis em estoque, multimarcas!
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-marca">Marca</th>
+                    <th class="col-modelo">Modelo</th>
+                    <th class="col-ano">Ano</th>
+                </tr>
+            </thead>
+            <!-- Início tbody -->
+            <tbody>
+                <!-- Veículos Renault -->
+                 <tr>
+                    <td rowspan="2">Renault</td>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/kwid.jpg" alt="Renault Kwid">
+                            <span>Kwid</span>
+                        </div>
+                    </td>
+                    <td>2023</td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/logan.webp" alt="Renault Logan">
+                            <span>Logan 1.6</span>
+                        </div>
+                    </td>
+                    <td>2017</td>
+                 </tr>
+                 <!-- Fim Veículos Renault -->
+
+                <!-- Veículos Toyota -->
+                 <tr>
+                    <td rowspan="3">Toyota</td>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/corolla.webp" alt="Toyota Corolla">
+                            <span>Corolla XEi</span>
+                        </div>
+                    </td>
+                    <td>2018</td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/etios.jpg" alt="Toyota Etios">
+                            <span>Etios Hatch</span>
+                        </div>
+                    </td>
+                    <td>2018</td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/yaris.webp" alt="Toyota Yaris">
+                            <span>Yaris</span>
+                        </div>
+                    </td>
+                    <td>2019</td>
+                 </tr>
+                 <!-- Fim Veículos Toyota -->
+                 <!-- Início Hyundai -->
+                  <tr>
+                    <td>Hyundai</td>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/hb20.webp" alt="Hyundai HB20">
+                            <span>HB20</span>
+                        </div>
+                    </td>
+                    <td>2023</td>
+                 </tr>
+                  <!-- Fim Veículos Hyundai -->
+            </tbody>
+            <!-- Fim tbody -->
+
+            <!-- Início tfoot -->
+            <tfoot>
+                <tr>
+                    <td colspan="3">Última atualização: 27/03/2026</td>
+                </tr>
+            </tfoot>
+            <!-- Fim tfoot -->
+
+        </table>
+        <img class="rodape-imagem" src="./img/logo.jpeg" alt="Logomarca da Multimarcas">
+    </div>
+
+</body>
+</html>
